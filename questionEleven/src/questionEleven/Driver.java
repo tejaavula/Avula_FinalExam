@@ -18,9 +18,9 @@ public class Driver {
         // TODO code application logic here
         // creating the Objects of Insta class.
 
-        facebook g1 = new facebook("teja", 4678);
-        facebook g2 = new facebook("teja", 4678);
-        facebook g3 = new facebook("krishna", 2465);
+        facebook g1 = new facebook("teja", 4678);//object1
+        facebook g2 = new facebook("teja", 4678);//object2
+        facebook g3 = new facebook("krishna", 2465);//object3
         System.out.println("***.equals***");
         System.out.println(g1.equals(g2));//it compares the inner content 
         System.out.println(g2.equals(g3));//it compares the inner content 
@@ -32,13 +32,13 @@ public class Driver {
         System.out.println(g3 == g1);//it compares the references
         System.out.println(g1 == g1);//it compares the references
         System.out.println("*****hashcode*****");
-        System.out.println(g1.hashCode());
-        System.out.println(g2.hashCode());
-        System.out.println(g3.hashCode());
+        System.out.println(g1.hashCode());// it returns the integer hashed value of the input value.
+        System.out.println(g2.hashCode());//it returns the integer hashed value of the input value.
+        System.out.println(g3.hashCode());//it returns the integer hashed value of the input value.
         System.out.println("****address of the particular instances****");
-        System.out.println(Integer.toHexString(System.identityHashCode(g1)));
-        System.out.println(Integer.toHexString(System.identityHashCode(g2)));
-        System.out.println(Integer.toHexString(System.identityHashCode(g3)));
+        System.out.println(Integer.toHexString(System.identityHashCode(g1)));//it is used to give an unique ID for each object
+        System.out.println(Integer.toHexString(System.identityHashCode(g2)));//it is used to give an unique ID for each object
+        System.out.println(Integer.toHexString(System.identityHashCode(g3)));//it is used to give an unique ID for each object
         // comparing above created Objects.
 
         if (g1.hashCode() == g2.hashCode()) {
